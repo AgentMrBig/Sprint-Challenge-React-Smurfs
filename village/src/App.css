@@ -6,13 +6,14 @@
   display: flex;
   flex-direction: row;
   color: black;
-  background-color: lightblue;
+  background-color: rgb(255, 248, 248);
   padding-bottom: 20px;
   border-bottom: solid 2px darkgray;
 }
 
 .navLink{
   text-decoration: none;
+  background-color: rgb(199, 241, 225);
   color: black;
   border: solid 1px green;
   padding: 3px;
