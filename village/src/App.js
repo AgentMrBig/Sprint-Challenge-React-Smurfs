@@ -9,6 +9,11 @@ export default class App extends Component {
     super(props);
     this.state = {
       smurfs: [],
+      smurf: {
+        name: '',
+        age: '',
+        height: '',
+      }
     };
   }
 
@@ -22,7 +27,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <SmurfForm />
+        <SmurfForm addSmurf={this.addSmurf} />
         <Smurfs smurfs={this.state.smurfs} />
       </div>
     );
@@ -41,6 +46,19 @@ export default class App extends Component {
         console.log(error);
         this.setState({ getErrorMessage: 'Could not retrieve any smurfs' });
       });
+  }
+
+  addSmurf = (e, smurf) => {
+    e.preventDefault();
+    axios
+      .post('http://localhost:3333/smurfs', smurf)
+      .then(res => {
+        this.setState({ smurf: res.data })
+        console.log('addSmurf ', res);
+      })
+      .catch(error => {
+        console.log(error);
+      })
   }
 }
 
