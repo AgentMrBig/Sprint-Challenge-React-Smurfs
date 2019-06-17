@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './smurfForm.css';
 
 class SmurfForm extends Component {
   constructor(props) {
@@ -17,6 +18,8 @@ class SmurfForm extends Component {
     this.props.addSmurf(event, {
       ...this.state
     })
+
+
     this.setState({
       id: '',
       name: '',
@@ -25,6 +28,7 @@ class SmurfForm extends Component {
     });
 
     setTimeout(() => {
+      //this.props.loadSmurfs()
       this.props.history.push('/');
     }, 1000);
   }

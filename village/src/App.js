@@ -11,6 +11,7 @@ export default class App extends Component {
     this.state = {
       smurfs: [],
       smurf: {
+        id: '',
         name: '',
         age: '',
         height: '',
@@ -22,21 +23,6 @@ export default class App extends Component {
   componentDidMount() {
     this.getSmurfs();
   }
-
-  componentDidUpdate() {
-
-    console.log('componentDidUpdate')
-  }
-
-  componentWillUpdate() {
-
-  }
-
-  shouldComponentUpdate() {
-    console.log('shouldComponentUpdate return true');
-    return true;
-  }
-
 
   // Notice what your map function is looping over and returning inside of Smurfs.
   // You'll need to make sure you have the right properties on state and pass them down to props.
@@ -55,7 +41,7 @@ export default class App extends Component {
         <Route
           exact
           path='/smurf-form'
-          render={props => <SmurfForm {...props} addSmurf={this.addSmurf} />}
+          render={props => <SmurfForm {...props} loadSmurfs={this.getSmurfs} addSmurf={this.addSmurf} />}
         />
 
 

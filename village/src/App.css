@@ -1,3 +1,25 @@
 .App {
   text-align: center;
 }
+
+.navi{
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.navLink{
+  text-decoration: none;
+  color: black;
+  border: solid 1px green;
+  padding: 3px;
+  width: 25%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+}
+
+.navLink:hover{
+  border: dotted 2px darkgreen;
+}
