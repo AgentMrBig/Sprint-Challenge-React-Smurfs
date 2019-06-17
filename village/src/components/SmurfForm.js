@@ -30,6 +30,7 @@ class SmurfForm extends Component {
     setTimeout(() => {
       //this.props.loadSmurfs()
       this.props.history.push('/');
+      //this.props.loadSmurfs();
     }, 1000);
   }
 

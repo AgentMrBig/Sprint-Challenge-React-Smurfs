@@ -4,8 +4,11 @@
 
 .navi{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   color: black;
+  background-color: lightblue;
+  padding-bottom: 20px;
+  border-bottom: solid 2px darkgray;
 }
 
 .navLink{
@@ -21,5 +24,5 @@
 }
 
 .navLink:hover{
-  border: dotted 2px darkgreen;
+  border: dotted 1px darkgreen;
 }
