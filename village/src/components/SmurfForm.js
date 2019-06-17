@@ -24,7 +24,9 @@ class SmurfForm extends Component {
       height: ''
     });
 
-
+    setTimeout(() => {
+      this.props.history.push('/');
+    }, 1000);
   }
 
   handleInputChange = e => {
