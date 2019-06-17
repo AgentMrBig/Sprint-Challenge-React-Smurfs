@@ -19,7 +19,6 @@ class SmurfForm extends Component {
       ...this.state
     })
 
-
     this.setState({
       id: '',
       name: '',

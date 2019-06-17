@@ -71,7 +71,7 @@ export default class App extends Component {
       .post('http://localhost:3333/smurfs', smurf)
       .then(res => {
         this.setState({ smurf: res.data })
-        console.log('addSmurf ', res);
+        console.log('addSmurf ', smurf);
       })
       .catch(error => {
         console.log(error);
