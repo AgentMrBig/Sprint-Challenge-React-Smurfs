@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(112, 139, 141);
+}
+.SmurfForm{
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 5px;
+}
+
+input{
+    margin: 10px;
+    height: 1.5rem;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 1.5rem;
+}

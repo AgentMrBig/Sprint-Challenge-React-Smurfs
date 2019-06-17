@@ -1,0 +1,20 @@
+.Smurfs{
+    background-color: rgb(182, 201, 202);
+    
+   padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    width: 100%;
+    
+}
+
+.Smurf{
+    border: 1px solid grey;
+    background-color: rgb(105, 161, 184);
+    margin: 5px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
